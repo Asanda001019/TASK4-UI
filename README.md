@@ -1,4 +1,4 @@
-<img src="https://socialify.git.ci/Asanda001019/TASK4-UI-Challenge/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="TASK4-UI-Challenge" width="640" height="320" />
+<img src="https://socialify.git.ci/Asanda001019/TASK4-UI/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="TASK4-UI" width="640" height="320" />
 <h1>Employees Application Task8</h1>
 <p>User Interface design challenge</p>
 
