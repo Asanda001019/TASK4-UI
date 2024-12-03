@@ -147,7 +147,7 @@ const App = () => {
     <img
       src={Chilli}
       alt="Chip Icon"
-      className="w-16 h-16 rounded-full bg-gray-100 shadow-md"
+      className="w-16 h-16 rounded-full bg-gray-900 shadow-md"
     />
     <div>
       <h4 className="text-lg font-bold text-gray-800">Tangy Barbecue</h4>
@@ -165,9 +165,9 @@ const App = () => {
     <div
       className="rounded-t-[30%] shadow-lg flex items-center justify-between px-4"
       style={{
-        height: "130px", // Keep the height of the main container as specified
-        width: "90%", // Center content and control width
-        margin: "0 auto", // Center horizontally
+        height: "130px", 
+        width: "90%", 
+        margin: "0 auto", 
         background: `repeating-linear-gradient(
           20deg,
           #125a4e, /* Dark Green */
@@ -179,13 +179,13 @@ const App = () => {
     >
       {/* Pair 1 */}
       <div className="flex items-center">
-        {/* Image Div */}
+    
         <div className="h-30 w-20 ">
           <img
             src={Chips}
             alt="Placeholder"
             className="w-[100px] h-[70px] object-cover rounded-lg"
-            // className="w-full h-full object-cover rounded-lg"
+
           />
         </div>
         <div className="h-[60px] w-[110px] bg-gray-100 flex items-center justify-center -ml-4 rounded-tr-[10%] rounded-br-[10%]">
