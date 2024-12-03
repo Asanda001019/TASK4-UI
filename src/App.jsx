@@ -1,11 +1,19 @@
 import React from "react";
+import Chips from "./assets/chips.png";
+import Logo from "./assets/chiplogo.png"
+import Smokey from "./assets/smokey.jpg"
+import Extra from "./assets/extralogo.png"
+import Chilli from "./assets/chilli.jpg"
 
 const App = () => {
   return (
-    <div className="bg-gray-100 min-h-screen font-sans">
+    <div className="bg-[#f4f1e8] min-h-screen font-sans">
       {/* Navigation */}
-      <nav className="flex justify-between items-center px-6 py-4 bg-white shadow-md">
-        <h1 className="text-2xl font-bold text-green-600">SunMall</h1>
+      <nav className="flex justify-between items-center px-6 py-4">
+        <div className="w-[100px] h-[30px] object-cover rounded-lg">
+        <img src={Logo}/>
+        
+        </div>
         <ul className="flex space-x-6 text-gray-700 font-medium">
           <li>Home</li>
           <li>About</li>
@@ -75,7 +83,7 @@ const App = () => {
   </button>
 
   {/* Number "2" Button */}
-  <button className="w-10 h-10 mx-4 flex items-center justify-center border border-red-500 rounded-full font-bold text-red-500">
+  <button className="w-10 h-10 mx-4 flex items-center justify-center border border-red-300 rounded-full font-bold text-gray-900">
     2
   </button>
 
@@ -93,11 +101,12 @@ const App = () => {
   {/* Image Section */}
   <div className="relative">
     <img
-      src="https://via.placeholder.com/300x400"
+      src={Chips}
       alt="Potato Chips"
-      className="w-100 transform -rotate-6 shadow-lg mr-40"
+      
+      className="w-[350px] h-[430px] object-cover transform -rotate-12 mr-40"
     />
-    <span className="absolute top-10 left-10 bg-yellow-500 text-white px-4 py-2 rounded-full shadow-md">
+    <span className="absolute top-48 -left-25 bg-yellow-500 text-white px-4 py-2 rounded-full shadow-md">
       Crispy & Tasty
     </span>
   </div>
@@ -110,7 +119,7 @@ const App = () => {
   {/* Chip 1 */}
   <div className="flex flex-row items-center space-x-4">
     <img
-      src="https://via.placeholder.com/50"
+      src={Smokey}
       alt="Chip Icon"
       className="w-16 h-16 rounded-full bg-gray-100 shadow-md"
     />
@@ -123,9 +132,9 @@ const App = () => {
   {/* Chip 2 */}
   <div className="flex flex-row items-center space-x-4">
     <img
-      src="https://via.placeholder.com/50"
+      src={Extra}
       alt="Chip Icon"
-      className="w-16 h-16 rounded-full bg-gray-100 shadow-md"
+      className="w-16 h-16 rounded-full bg-green-900 shadow-md"
     />
     <div>
       <h4 className="text-lg font-bold text-gray-800">Cheese Delight</h4>
@@ -136,7 +145,7 @@ const App = () => {
   {/* Chip 3 */}
   <div className="flex flex-row items-center space-x-4">
     <img
-      src="https://via.placeholder.com/50"
+      src={Chilli}
       alt="Chip Icon"
       className="w-16 h-16 rounded-full bg-gray-100 shadow-md"
     />
@@ -154,11 +163,11 @@ const App = () => {
   <div className="mt-6">
     {/* Outer Container */}
     <div
-      className="h-[20%] rounded-t-[30%] shadow-lg"
+      className="rounded-t-[30%] shadow-lg flex items-center justify-between px-4"
       style={{
-        height: "100px", // Set a fixed height for visibility
-        width: "90%", // Set the width to 100% to fill the parent container
-        margin: "0 auto", // Center the content horizontally
+        height: "130px", // Keep the height of the main container as specified
+        width: "90%", // Center content and control width
+        margin: "0 auto", // Center horizontally
         background: `repeating-linear-gradient(
           20deg,
           #125a4e, /* Dark Green */
@@ -168,7 +177,97 @@ const App = () => {
         )`,
       }}
     >
-      {/* Content can be added here later */}
+      {/* Pair 1 */}
+      <div className="flex items-center">
+        {/* Image Div */}
+        <div className="h-30 w-20 ">
+          <img
+            src={Chips}
+            alt="Placeholder"
+            className="w-[100px] h-[70px] object-cover rounded-lg"
+            // className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+        <div className="h-[60px] w-[110px] bg-gray-100 flex items-center justify-center -ml-4 rounded-tr-[10%] rounded-br-[10%]">
+  {/* Description Text */}
+  <div className="flex flex-col items-start justify-center">
+    {/* Star Ratings and Price */}
+    <p className="text-xs font-semibold flex items-center space-x-2">
+         <p className="text-xs font-semibold text-center">Black Barbeque<br/>
+      <span className="text-yellow-400">★★★★</span>
+      <span className="text-black ml-1">$12.23</span>
+    </p>
+    </p>
+    {/* Buy Now Button */}
+    <button className="mt-1 bg-red-500 text-white text-[8px] font-bold px-1 py-0.5 rounded-full">
+      Buy Now
+    </button>
+  </div>
+</div>
+
+
+      </div>
+
+           {/* Pair 1 */}
+           <div className="flex items-center">
+        {/* Image Div */}
+        <div className="h-30 w-20 ">
+          <img
+            src={Chips}
+            alt="Placeholder"
+            className="w-[100px] h-[70px] object-cover rounded-lg"
+            // className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+        <div className="h-[60px] w-[100px] bg-gray-100 flex items-center justify-center -ml-4 rounded-tr-[10%] rounded-br-[10%]">
+  {/* Description Text */}
+  <div className="flex flex-col items-start justify-center">
+    {/* Star Ratings and Price */}
+    <p className="text-xs font-semibold flex items-center space-x-2">
+         <p className="text-xs font-semibold text-center">Mr. Potatoes<br/>
+      <span className="text-yellow-400">★★★★</span>
+      <span className="text-black ml-1">$15.23</span>
+    </p>
+    </p>
+    {/* Buy Now Button */}
+    <button className="mt-1 bg-red-500 text-white text-[8px] font-bold px-1 py-0.5 rounded-full">
+      Buy Now
+    </button>
+  </div>
+</div>
+
+
+      </div>
+      {/* Pair 1 */}
+      <div className="flex items-center">
+        {/* Image Div */}
+        <div className="h-30 w-20 ">
+          <img
+            src={Chips}
+            alt="Placeholder"
+            className="w-[100px] h-[70px] object-cover rounded-lg"
+            // className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+        <div className="h-[60px] w-[100px] bg-gray-100 flex items-center justify-center -ml-4 rounded-tr-[10%] rounded-br-[10%]">
+  {/* Description Text */}
+  <div className="flex flex-col items-start justify-center">
+    {/* Star Ratings and Price */}
+    <p className="text-xs font-semibold flex items-center space-x-1">
+         <p className="text-xs font-semibold text-center">Tom Yummy<br/>
+      <span className="text-yellow-400">★★★★</span>
+      <span className="text-black ml-1">$16.24</span>
+    </p>
+    </p>
+    {/* Buy Now Button */}
+    <button className="mt-1 bg-red-500 text-white text-[8px] font-bold px-1 py-0.5 rounded-full">
+      Buy Now
+    </button>
+  </div>
+</div>
+
+
+      </div>
     </div>
   </div>
 </div>
