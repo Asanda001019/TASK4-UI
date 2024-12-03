@@ -149,34 +149,31 @@ const App = () => {
 
 </div>
     </div>
-        {/* Chips Section */}
-        <div className="mt-16">
-          <h3 className="text-2xl font-semibold text-gray-800">Our Products</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-            {/* Example Card */}
-            {[
-              { name: "Black Barbeque", price: "$12.30" },
-              { name: "Mr. Potato", price: "$16.50" },
-              { name: "Tom Yumm", price: "$11.50" },
-            ].map((product) => (
-              <div
-                key={product.name}
-                className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center"
-              >
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt={product.name}
-                  className="w-40"
-                />
-                <h4 className="text-lg font-semibold mt-4">{product.name}</h4>
-                <p className="text-green-600 font-medium">{product.price}</p>
-                <button className="mt-4 bg-green-600 text-white px-6 py-2 rounded-full">
-                  Order Now
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
+{/* Chips Section */}
+<div className="mt-2">
+  <div className="mt-6">
+    {/* Outer Container */}
+    <div
+      className="h-[20%] rounded-t-[30%] shadow-lg"
+      style={{
+        height: "100px", // Set a fixed height for visibility
+        width: "90%", // Set the width to 100% to fill the parent container
+        margin: "0 auto", // Center the content horizontally
+        background: `repeating-linear-gradient(
+          20deg,
+          #125a4e, /* Dark Green */
+          #125a4e 40px,
+          #22675b 40px,
+          #22675b 80px
+        )`,
+      }}
+    >
+      {/* Content can be added here later */}
+    </div>
+  </div>
+</div>
+
+
       </main>
     </div>
   );
