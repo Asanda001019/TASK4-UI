@@ -1,6 +1,5 @@
 <img src="https://socialify.git.ci/Asanda001019/TASK4-UI/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="TASK4-UI" width="640" height="320" />
-<h1>Employees Application Task8</h1>
-<p>User Interface design challenge</p>
+<h1>User Interface design challenge</h1>
 
 ## Run Locally
 Clone the project
@@ -9,7 +8,7 @@ Clone the project
 ```
 Go to the project directory
 ```bash
-  cd TASK6-EMPLOYEES-APPLICATION/TASK4-UI
+  cd/TASK4-UI
 ```
 Install dependencies
 ```bash
@@ -21,7 +20,7 @@ npm run dev
 ````
 
 ## Tech Stack
-**Client:** React JS, HTML5, JavaScript, CSS3
+**Client:** React JS, HTML5, JavaScript, CSS3 ,tailwind css
 
 
 # React + Vite
